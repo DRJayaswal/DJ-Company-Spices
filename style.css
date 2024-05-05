@@ -1,24 +1,26 @@
-body{
+body {
     background-color: #990000;
 }
-.navbar{
-    /* position: relative; */
+
+.navbar {
     border: solid;
     border-width: 4px;
     display: flex;
-    background-color: #F3B95F;
+    background-color: #f3b95f;
     border-radius: 80px;
     padding-bottom: 10px;
 }
-.logo-item{
+
+.logo-item {
     flex: 0;
 
     padding: 14px;
     padding-bottom: 0px;
-    background-color: #F3B95F;
+    background-color: #f3b95f;
     border-radius: 80px;
 }
-.logo{
+
+.logo {
     /* border: ; */
     border-radius: 500px;
     border-width: 10px;
@@ -26,47 +28,62 @@ body{
     height: auto;
     animation: rotate 5s linear infinite;
 }
+
 @keyframes rotate {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
+}
+
 @keyframes rotate-hover {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-.search-container{
+}
+
+.search-container {
     flex: 1;
     border-radius: 30px;
     padding: 5px;
 }
-.search{
+
+.search {
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
     text-align: center;
     height: 20px;
     width: 180px;
     border-radius: 30px;
 }
-.search-button:hover{
-    background-color: #F3B95F;
-    color: #990000;
+
+.search-button:hover {
+    background-color: #990000;
+    color: #f3b95f;
 }
-.search-button{
+
+.search-button {
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
     border-color: black;
     border-style: solid;
     height: 30px;
     width: 60px;
     border-radius: 30px;
-    background-color: #990000;
-    color: #F3B95F;
+    background-color: #f3b95f;
+    color: black;
 }
-#footer-logo{
+
+#footer-logo {
     background-color: black;
     border-radius: 500px;
     border-width: 10px;
@@ -74,54 +91,72 @@ body{
     height: auto;
     cursor: pointer;
 }
-#footer-logo:hover{
+
+#footer-logo:hover {
     animation: rotate-hover 5s linear infinite;
 }
 
-h1{
-    font-family: "vollkorn",serif;
+h1 {
+    font-family: "vollkorn", serif;
     font-size: 40px;
 }
-.logo:hover{
+
+.logo:hover {
     cursor: pointer;
     animation: rotate-hover 5s linear infinite;
 }
 
-.label-buttons-container{
+.label-buttons-container {
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 4px;
+    margin-top: 8px;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 0px;
+    background-color: #f3b95f;
     display: flex;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-a:hover{
-    font-size:xx-large;
+
+a,
+.label-buttons:hover {
+    font-size: xx-large;
+    color: black;
 }
-.label-buttons{
+
+.label-buttons {
+    color: black;
     flex: 1;
     font-size: large;
 }
 
-.label-item{
+.label-item {
     text-align: center;
     flex: 9;
 }
-.footer-items-container{
+
+.footer-items-container {
     display: flex;
 
     border-style: solid;
     border-width: 4px;
-    padding-left: 100px;
-    padding-right: 100px;
-    /* border-radius: 30px; */
+    padding: 100px;
     background-color: black;
 }
-footer{
+
+footer {
     color: black;
     margin-left: -12px;
     margin-right: -10px;
 }
-.footer-items{
+
+.footer-items {
     text-align: left;
     flex: 1;
     color: white;
@@ -130,9 +165,209 @@ footer{
     margin-right: 30px;
     margin-bottom: 20px;
 }
-h3{
+
+h3 {
     margin-left: 5px;
 }
-.items{
+
+.items {
     margin: 5px;
+}
+
+.pallete-heading {
+    background-color: #f3b95f;
+    color: black;
+    font-size: 250%;
+    margin-top: 10px;
+    margin-left: 125px;
+    margin-right: 125px;
+    /* padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    padding: 20px;
+    padding-bottom: 9px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    border-bottom: none;
+    box-shadow: 10px 0px 5px rgb(79, 20, 27);
+}
+
+.pallete {
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    background-color: #f3b95f;
+    box-shadow: 20px;
+    margin: 5px;
+    margin-left: 125px;
+    margin-right: 125px;
+    box-shadow: 10px 10px 5px rgb(79, 20, 27);
+}
+
+.center {
+    margin: 25px;
+}
+
+.food-list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.food-items {
+    flex: 1;
+}
+
+.food-item-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.food-item-picture:hover {
+    width: 152px;
+    height: 152px;
+    box-shadow: 5px 5px 5px rgb(79, 20, 27);
+}
+
+.food-item-heading {
+    /* background-color: #990000; */
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 30px;
+    font-family: "vollkorn", serif;
+    font-size: x-large;
+}
+
+.restaurant-nearby {
+    margin: 25px;
+}
+
+.column {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 15px;
+    display: flex;
+}
+
+.restaurant-pallete {
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    background-color: #f3b95f;
+    box-shadow: 20px;
+    margin: 5px;
+    margin-left: 125px;
+    margin-right: 125px;
+    box-shadow: 10px 10px 5px rgb(79, 20, 27);
+}
+
+.restaurants {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    flex: 1;
+    border-width: 0px;
+    /* border-style: solid; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.restaurant-heading {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #f3b95f;
+    background-color: black;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 80%;
+    border: solid;
+    border-color: black;
+    border-width: 4px;
+}
+
+.restaurant-info {
+    background-color: #f3b95f;
+    padding: 5px;
+    border-width: 4px;
+    margin: 0px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    font-size: 50%;
+    border-style: solid;
+}
+
+.restaurant-location {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #f3b95f;
+    background-color: black;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 80%;
+    border: solid;
+    border-color: black;
+    border-width: 4px;
+}
+
+.restaurant-heading:hover {
+    background-color: #f3b95f;
+    color: black;
+}
+
+.restaurant-location:hover {
+    background-color: #f3b95f;
+    color: black;
+}
+
+.restaurants:hover {
+    /* width: 500px; */
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(79, 20, 27);
+}
+
+.near-by-restaurants-heading {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: #f3b95f;
+    text-align: center;
+    font-size: 250%;
+}
+.restaurant-pallete-more{
+    background-color: black;
+    width: 100%;
+    text-align: end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.more{
+    background-color: #f3b95f;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 10px;
+    border: black 4px solid;
+    border-radius: 30px;
+    font-size: x-large;
+}
+.more:hover{
+    background-color: #990000;
+    color: #f3b95f;
 }
